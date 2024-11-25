@@ -1,9 +1,16 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: #cfd1d2;
+    background: linear-gradient(to right, #cfd1d2, #131E2F);
+
 }
 
 .logo-content {
@@ -11,45 +18,31 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    align-items: center;
 
 }
 
 .logo-content img {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 50px;
 }
 
 .logo-content h1 {
     margin-left: 10px;
-    margin-top: 30px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .container-login {
     background-color: #f3f3f3;
     flex-direction: column;
     display: flex;
-    width: 30vw;
+    width: 600px;
     height: 75vh;
     border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px #151515;
     justify-content: center;
     align-items: center;
-}
-
-.container-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 10vw;
-}
-
-
-
-.subtitulo {
-    font-size: 20px;
 }
 
 
@@ -77,18 +70,21 @@
 .container-login input {
     background-color: #e8e8e8;
     width: 50%;
-    height: 40px;
+    height: 50px;
     margin-bottom: 30px;
     padding: 0 10px;
     border: none;
     border-radius: 12px;
     font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s;
+}
+
+.container-login input:hover{
+    border: 0.14rem solid #01A5B1;
+
 }
 
 .button-login {
-    background-color: #000;
+    background-color: #01A5B1;
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 50%;
@@ -99,11 +95,12 @@
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+    transition: background-color 0.5s;
 }
 
 .button-login:hover {
     background-color: #fff;
-    color: #000;
+    color: #01A5B1
 }
 
 
@@ -117,6 +114,7 @@
     border-radius: 12px;
     font-size: 12px;
     font-weight: 600;
+    transition: background-color 0.5s;
 }
 
 .button-forgot-password:hover {

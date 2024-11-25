@@ -21,11 +21,7 @@ form.addEventListener('submit', (event) => {
     }
 
 
-    errorMessage.textContent = "Login realizado com sucesso!";
-    errorMessage.style.color = "green";
-    console.log({ email, password });
-
-
+    errorMessage.textContent = "";
     form.reset();
 });
 
