@@ -54,13 +54,16 @@
     align-items: center;
 }
 
-.form {
-    display: flex;
+
+#loginForm {
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
-}
+    margin-left: 300px;
+}  
+
+
 
 .container-login h1 {
     margin-bottom: 50px;
