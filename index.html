@@ -13,19 +13,23 @@
 <body>
     <div class="container">
         <div class="logo-content">
-        <img src="src/assets/logovgtech.jpeg" alt="Logo">
-        <h1>VG Tech Solutions</h1>
+            <img src="src/assets/logovgtech.jpeg" alt="Logo">
+            <h1>VG Tech Solutions</h1>
         </div>
         <div class="container-login">
             <div class="inputs-and-buttons">
                 <h1>Login</h1>
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Senha">
-                <button class="button-login">Entrar</button>
-                <button class="button-forgot-password">Esqueci minha senha</button>
+                <form id="loginForm" class="form">
+                    <input id="email-input" type="text" placeholder="Digite seu email">
+                    <input id="password-input" type="password" placeholder="Digite sua senha">
+                    <p id="error-message"></p>
+                    <button id="enter" class="button-login">Entrar</button>
+                </form>
+                <button type="submit" class="button-forgot-password">Esqueci minha senha</button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
